@@ -68,5 +68,15 @@ public class Terminal {
         product.aumentarPreco(porcentagem);
 
         System.out.println("Novo preço: " + product.preco);
+
+        //ler a quantidade
+        System.out.println("Quantos itens deseja comprar?");
+        int qtd = entrada.nextInt();
+
+        //Calcular o valor total
+        double valorTotal =  product.calcularValorTotal(qtd);
+
+        //Exibir o valor total
+        System.out.println("Valor total dos produtos: " + valorTotal);
     }
 }
